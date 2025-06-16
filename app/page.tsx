@@ -48,10 +48,14 @@ export default function HomePage() {
       const data = await response.json();
       setProducts(data.slice(0, 6)); // Show first 6 products
       
-      // Calculate stats
+      {/* // Commented for Static values
       const totalExams = data.length;
       const totalQuestions = data.reduce((sum: number, product: Product) => sum + product.questionsCount, 0);
-      const avgPrice = data.reduce((sum: number, product: Product) => sum + product.price, 0) / data.length;
+      const avgPrice = data.reduce((sum: number, product: Product) => sum + product.price, 0) / data.length; */}
+
+      const totalExams = 50+;
+      const totalQuestions = 3000+;
+      const avgPrice = 25$;
       
       setStats({ totalExams, totalQuestions, avgPrice: Math.round(avgPrice) });
     } catch (error) {
