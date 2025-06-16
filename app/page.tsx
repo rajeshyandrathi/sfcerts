@@ -53,9 +53,9 @@ export default function HomePage() {
       const totalQuestions = data.reduce((sum: number, product: Product) => sum + product.questionsCount, 0);
       const avgPrice = data.reduce((sum: number, product: Product) => sum + product.price, 0) / data.length; */}
 
-      const totalExams = 50+;
-      const totalQuestions = 3000+;
-      const avgPrice = 25$;
+      const totalExams = 50;
+      const totalQuestions = 3000;
+      const avgPrice = 25;
       
       setStats({ totalExams, totalQuestions, avgPrice: Math.round(avgPrice) });
     } catch (error) {
